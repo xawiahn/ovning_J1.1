@@ -3,16 +3,17 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-		int tal1, tal2, produkt, summa;
+		double tal1, tal2, tal3, summa, medelvardet;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Skriv in tal1: ");
-		tal1 = sc.nextInt();
+		tal1 = sc.nextDouble();
 		System.out.print("Skriv in tal2: ");
-		tal2 = sc.nextInt();
-		produkt = tal1 * tal2;
-		summa = tal1 + tal2;
-		System.out.println("Produkten: " + tal1 + " * " + tal2 + " = " + produkt);
-		System.out.println("Summan: " + tal1 + " + " + tal2 + " = " + summa);
+		tal2 = sc.nextDouble();
+		System.out.print("Skriv in tal3: ");
+		tal3 = sc.nextDouble();
+		summa = tal1 + tal2 + tal3;
+		medelvardet = summa / 3;
+		System.out.println("(" + tal1 + " + " + tal2 + " + " + " + " + tal3 + ") / 3 = " + medelvardet);
 	}
 
 }
