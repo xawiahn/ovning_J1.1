@@ -74,6 +74,30 @@ public class main {
 		}while(tal != 0);
 		System.out.println("Summan av de talen du skrev in blir: " + summa);
 		*/
+		
+		/* ÖVNING J.6
+		int tal[] = new int[10], jamnfortal, antal = 0;
+		Scanner sc = new Scanner(System.in);
+		for(int i = 0; i < 10; i++)
+		{
+			System.out.print("Skriv in ett tal: ");
+			tal[i] = sc.nextInt();			
+			
+		}
+		System.out.print("Skriv in ett tal att jämföra med: ");
+		jamnfortal = sc.nextInt();
+		for(int n = 0; n < 10; n++)
+		{
+			if(tal[n] > jamnfortal)
+			{
+				antal += 1;
+			}
+		}
+		System.out.println(antal + " av dom talen du skrev in innan är större än talet du jämförde med");
+		*/
+		
+		
+		
 	}
 
 }
