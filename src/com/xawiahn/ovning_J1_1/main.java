@@ -38,6 +38,26 @@ public class main {
 			System.out.println(tal2 + " är större än " + tal1);
 		}
 		*/
+		
+		
+		/* ÖVNING J1.4
+		int tal[] = new int[3], storsta = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Skriv in tal1: ");
+		tal[0] = sc.nextInt();
+		System.out.print("Skriv in tal2: ");
+		tal[1] = sc.nextInt();
+		System.out.print("Skriv in tal3: ");
+		tal[2] = sc.nextInt();
+		for(int i = 0; i < 3; i++)
+		{
+			if(tal[i] > storsta)
+			{
+				storsta = tal[i];
+			}
+		}
+		System.out.println(storsta + " är det största talet");
+		*/
 	}
 
 }
