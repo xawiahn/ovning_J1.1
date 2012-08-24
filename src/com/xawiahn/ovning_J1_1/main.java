@@ -121,6 +121,7 @@ public class main {
 		{
 			if(storsta != poang[m] && minsta != poang[m])
 			{
+				//SKRIV IN EN IF 'RAKNARE' ÄR UNDER 2
 				rensadepoang[raknare] = poang[m];
 				raknare += 1;
 			}
