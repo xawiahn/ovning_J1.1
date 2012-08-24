@@ -58,6 +58,22 @@ public class main {
 		}
 		System.out.println(storsta + " är det största talet");
 		*/
+		
+		
+		/* ÖVNING J1.5
+		int summa = 0, tal;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Skriv '0' för att avsluta programmet");
+		do
+		{
+			System.out.print("Skriv in ett tal: ");
+			tal = sc.nextInt();
+			summa += tal;
+			
+			
+		}while(tal != 0);
+		System.out.println("Summan av de talen du skrev in blir: " + summa);
+		*/
 	}
 
 }
