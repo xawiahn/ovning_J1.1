@@ -97,7 +97,50 @@ public class main {
 		*/
 		
 		
-		
+		double poang[] = new double[10], rensadepoang[] = new double[8], storsta = 0, minsta, slutpoang = 0;
+		int raknare = 0;
+		Scanner sc = new Scanner(System.in);
+		for(int i = 0; i < 10; i++)
+		{
+			System.out.print("Skriv in ett domarpoäng: ");
+			poang[i] = sc.nextDouble();			
+		}
+		minsta = poang[0];
+		for(int n = 0; n < 10; n++)
+		{
+			if(poang[n] > storsta)
+			{
+				storsta = poang[n];
+			}
+			if(poang[n] < minsta)
+			{
+				minsta = poang[n];
+			}
+		}
+		for(int m = 0; m < 10; m++)
+		{
+			if(storsta != poang[m] && minsta != poang[m])
+			{
+				rensadepoang[raknare] = poang[m];
+				raknare += 1;
+			}
+		}
+		System.out.println("Original domarepoäng: ");
+		for(int p = 0; p < 10; p++)
+		{
+			System.out.print(poang[p] + " ");
+		}
+		System.out.println("Domarepoäng med minsta och största värdet borttagit: ");
+		for(int t = 0; t < 8; t++)
+		{
+			System.out.print(rensadepoang[t] + " ");
+		}
+		for(int r = 0; r < 8; r++)
+		{
+			slutpoang += rensadepoang[r];
+		}
+		slutpoang /= 8;
+		System.out.println("Slutpoang blir: " + slutpoang);
 	}
 
 }
